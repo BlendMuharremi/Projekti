@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<link rel="stylesheet" href="booktable.css">
+</head>
+<body>
+
+    <header>
+
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        
+        <a href="#" class="logo">Restaurant</a>
+        <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="index.html">about</a>
+        <a href="menu.html">products</a>
+        <a href="index.html">review</a>
+        <a href="login.html">Login/Register</a>
+</nav>
+
+</header>
+
+
+    <section class="container">
+      <h1>Book your table now</h1>
+      
+      <form action="#" class="form">
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter full name" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input type="number" placeholder="Enter phone number" required />
+          </div>
+        </div>
+        
+        <div class="input-box date">
+           
+        <label for="start">Date</label>
+
+          <input type="date" id="start" value="0" min="2015-01-01" max="2024-12-31" />
+        
+        <label for="Time">Time</label>
+
+          <input type="time" id="appt" name="appt" min="09:00" max="18:00" required />
+          <div class="select-box">
+              <select>
+                <option hidden>Table</option>
+                <option>Table 1</option>
+                <option>Table 2</option>
+                <option>Table 3</option>
+                <option>Table 4</option>
+                <option>Table 5</option>
+                <option>Table 6</option>
+                <option>Table 7</option>
+                <option>Table 8</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+        <button>Submit</button>
+      </form>
+    </section>
+
+
+  </body>
+</html>
