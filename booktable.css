@@ -84,13 +84,14 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background-color: #f3cba5;
+  background-image: url(background5.jpg);
+  background-size: cover;
 }
 .container {
   position:relative;
   max-width: 700px;
   width: 100%;
-  background: #fff;
+  background: #eee;
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
