@@ -19,7 +19,7 @@
     <input type="checkbox" name="" id="toggler">
     <label for="toggler" class="fas fa-bars"></label>
     
-    <a href="#" class="logo">Restaurant</a>
+    <a href="index.html" class="logo">Restaurant</a>
     <nav class="navbar">
     <a href="index.html">home</a>
     <a href="index.html">about</a>
@@ -32,7 +32,6 @@
 
 
   <div class="container">
-    <input type="checkbox" id="flip">
     <div class="cover">
       <div class="front">
         <img src="hamburger1.jpg" alt="">
@@ -54,56 +53,30 @@
               </div>
               <div class="input-box">
                 <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Enter your password" required>
+                <input type="password" placeholder="Enter your password" required >
               </div>
               <div class="text"><a href="#">Forgot password?</a></div>
               <div class="button input-box">
                 <input type="submit" value="Sumbit">
               </div>
-              <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
+              <div class="text sign-up-text">Don't have an account? <a href="register.html">Signup now</a></div>
             </div>
         </form>
       </div>
-        <div class="signup-form">
-          <div class="title">Signup</div>
-        <form action="#">
-            <div class="input-boxes">
-              <div class="input-box">
-                <i class="fas fa-user"></i>
-                <input type="name" placeholder="Enter your name" required>
-              </div>
-              <div class="input-box">
-                <i class="fas fa-envelope"></i>
-                <input type="email" placeholder="Enter your email" required>
-              </div>
-              <div class="input-box">
-                <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Enter your password" required>
-              </div>
-              <div class="button input-box">
-                <input type="submit" value="Sumbit">
-              </div>
-              <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
-            </div>
+        </div>
       </form>
 
       <script>
-        let nameRegex = /^[A-Z][a-z]{3,8}$/;
+        
         let emailRegex = /[a-zA-Z.-_]+@+[a-z]+\.+[a-z]{2,3}$/;
     
         function validateForm(){
-            let nameInput = document.getElementById('name');
-            let nameError = document.getElementById('nameError');
+        
             let emailInput = document.getElementById('email');
             let emailError = document.getElementById('emailError');
-    
-            nameError.innerText = '';
+  
             emailError.innerText = '';
     
-            if(!nameRegex.test(nameInput.value)){
-                nameError.innerText = 'invalid name';
-                return;
-            }
             if(!emailRegex.test(emailInput.value)){
                 emailError.innerText = 'invalid email';
                 return;
