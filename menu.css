@@ -143,16 +143,6 @@ header .fa-bars{
     position: relative;
 }
 
-.products .box-container .box .discount{
-    position: absolute;
-    top: 1rem; left: 1em;
-    padding:.7rem 1rem;
-    font-size: 2rem;
-    color:red;
-    background:rgba(255, 51, 153,.05);
-    z-index: 1;
-    border-radius: .5rem;
-}
 
 
 .products .box-container .box .image{
@@ -186,17 +176,11 @@ header .fa-bars{
 
 .products .box-container .box .content .price{
     font-size: 2.5rem;
-    color: var(--pink);
+    color: #402a23;
     font-weight: bolder;
     padding-top: 1rem;
 }
 
-.products .box-container .box .content .price span{
-    font-size: 1.5rem;
-    color: #999;
-    font-weight: lighter;
-    text-decoration: line-through;
-}
 
 
 
