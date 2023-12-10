@@ -28,7 +28,8 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ebcbae;
+  background-image: url(background5.jpg);
+  background-size: cover;
   padding: 30px;
 }
 
@@ -111,32 +112,7 @@ header .fa-bars{
   transform-origin: left;
   transform-style: preserve-3d;
 }
-.container #flip:checked ~ .cover{
-  transform: rotateY(-180deg);
-}
- .container .cover .front{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
 
-.container .cover::before,
-.container .cover::after{
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: #402a23;
-  opacity: 0.5;
-  z-index: 12;
-}
-.container .cover::after{
-  opacity: 0.3;
-  transform: rotateY(180deg);
-  backface-visibility: hidden;
-}
 .container .cover img{
   position: absolute;
   height: 100%;
@@ -194,7 +170,7 @@ header .fa-bars{
   width: 25px;
   background: #402a23;
 }
-.forms .signup-form  .title:before{
+.forms .signup-form  .title{
   width: 20px;
 }
 .forms .form-content .input-boxes{
@@ -266,9 +242,7 @@ header .fa-bars{
   text-align: center;
   margin-top: 25px;
 }
-.container #flip{
-  display: none;
-}
+
 
 
 
@@ -282,12 +256,6 @@ header .fa-bars{
     width: 100%;
   }
   .form-content .signup-form{
-    display: none;
-  }
-  .container #flip:checked ~ .forms .signup-form{
-    display: block;
-  }
-  .container #flip:checked ~ .forms .login-form{
     display: none;
   }
 }
