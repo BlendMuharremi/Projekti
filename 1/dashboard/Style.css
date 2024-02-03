@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header {
+    position: fixed;
+    top: 0; left: 0; right:0;
+    background: #402a23;
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    }
+
+header .logo{
+        font-size: 3rem;
+        color: #f9f5f0;
+        font-weight: bolder;
+        padding: 5px;
+}
+
+header .logo span{
+    color: #f3cba5;
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding:0 1.5rem; 
+    color: #f9f5f0;
+}
+
+header .navbar a:hover{
+     color: #f3cba5;
+}
+
+
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.dashboard-item {
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.table-dashboard {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-dashboard th, .table-dashboard td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: left;
+    background-color: #fbefe4;
+}
+
+.table-dashboard th {
+    background-color: #f7dfc9;
+}
+
+.edito-button{
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.fshij-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.edito-button:hover{
+    transform: scale(1.07);
+    transition-duration: 0.3s;
+}
+.fshij-button:hover{
+    transform: scale(1.07);
+    transition-duration: 0.3s;
+}
+.btn-shto-crud button:hover{
+    transform: scale(1.07);
+    transition-duration: 0.3s;
+}
+.btn-shto-crud{
+display: flex;
+justify-content: flex-end;
+margin-bottom: 20px;
+}
+.btn-shto-crud button{
+color: #fff;
+background-color: yellowgreen;
+border-radius: 6px;
+width: 140px;
+height: 35px;
+border: 0;
+cursor: pointer;
+}
+
+.dashboard-shto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
+    height: 100vh;
+}
+
+.dashboard-shto-item {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    width: 67vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+.btn-kthehu p{
+    font-weight: bold;
+    font-size: 25px;
+    align-items: center;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.011);
+    margin-left: 30px;
+}
+
+.btn-kthehu {
+    margin-top: 140px;
+
+    display: none;
+    justify-content: space-between;
+    
+}
+
+.kthehu {
+    margin-right: 8.4vh;
+    background-color: rgb(0, 90, 128);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.kthehu:hover {
+    background-color: #2980b9;
+}
+
+#content {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.box-shto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 54vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+fieldset {
+    margin-bottom: 15px;
+    width: 400px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+.box-shto input {
+    width: 90%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.box-shto select {
+    width: 90%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.box-shto input[type="submit"] {
+    background-color: lightseagreen;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.box-shto input[type="submit"]:hover {
+    background-color: #79d0cc;
+}
+
+hr {
+    margin-top: 5px;
+    margin-bottom: 50px;
+    width: 100%;
+    border: 1px solid black; 
+}
+
+
+h1 {
+    font-family: Apple Chancery, cursive;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+
+.product-info {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.flexdetails{
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 19vh;
+    height: 45vh;
+}
+.boxdetails {
+    width: 100%;
+    max-width: 95vh;
+    margin-top: 1.5vh;
+    padding: 2vh;
+    box-shadow: 0 0 10px black;
+    background-color:white;
+}
+.boxdetails h1 {
+    text-align: center;
+    margin-bottom: 2vh;
+    color: black
+}
+
+.boxdetails form {
+    display: flex;
+    height: 40vh;
+    flex-direction: column;
+}
+
+.boxdetails input[type="text"],
+.boxdetails input[type="email"],
+.boxdetails textarea {
+    margin-bottom: 1.5vh;
+    padding: 1vh;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.boxdetails textarea {
+    resize: vertical;
+}
+
+.boxdetails button {
+    padding: 1vh;
+    background-color: rgb(14, 14, 103);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boxdetails button:hover {
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.02);
+}
+
+body {
+    background-color: #dcdcdc;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#main-content-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.card-indexdash {
+    width: 700px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-indexdash:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin: 0;
+    color: #333;
+    padding-left: 20px;
+}
+
+p {
+    font-size: 1.4em;
+    margin: 5px 0;
+    color: #666;
+}
+
+i {
+    font-size: 2em;
+    color: #3498db;
+    padding-right: 20px;
+}
+
+
+
